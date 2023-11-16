@@ -7,11 +7,8 @@ const app = express();
 // Email authtication
 const filedata = require('./params.json');
 
-// const myEmail = 'idontknowyou717@gmail.com';
-// const secretKey = 'ua6zt3a7qemp324ighbw56ci5jkxkfxl';
-// const myEmailPass = 'hqtl wjya vbyk khvm';
 
-// app.use(express.json());
+// with ejs alway try to use bodyParser
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
